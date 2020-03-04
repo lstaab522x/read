@@ -74,10 +74,22 @@ font-size: 1em;}
 .book:last-of-type,.book:last-child,p:last-of-type p:last-child{color:maroon;}
 
 h1.title{color: maroon;}
-.title>p:first-child {color: teal;}
 
 a:hover{color:black;}
 a{color:maroon;}
+
+table:first-child{
+    color: black;
+    }
+
+p:nth-child(4){color: black;}
+
+.preface1+p{
+    color: black;
+}
+
+title>p{color: maroon ;}
+
 
 @media screen and (max-width: 768px) {
     p:nth-of-type(5n){
@@ -88,6 +100,7 @@ a{color:maroon;}
     }
     p{width: 60vw;
         margin: auto;
+    }
 }
 @media screen and (max-width: 768px) {
     p:nth-of-type(5n){
@@ -99,6 +112,7 @@ a{color:maroon;}
     p{width: 60vw;
       margin: auto;
     }
+}
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     p:nth-of-type(5n){
@@ -107,8 +121,7 @@ a{color:maroon;}
     p:nth-of-type(7n){
         padding-right: 0vw;
     }
-    p{width: 60vw;{
+    p{width: 60vw;
       margin: auto;
     }
-}
 }
